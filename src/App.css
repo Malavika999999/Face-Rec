@@ -1,38 +1,180 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #020631;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.app .mainHeading h1 {
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.box {
+  margin-top: 20px;
+  width: 25em; /* Increased width */
+  height: 4em; /* Increased height */
+  background-color: white;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box h2 {
+  color: grey;
+}
+
+.input {
+  margin-top: 0.8em;
+  width: 100%;
+  height: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 5px;
+  background-color: #f0f0f0;
+}
+
+.input input {
+  width: 80%;
+  height: 100%;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  padding: 5px;
+}
+
+.input i {
+  cursor: pointer;
+  font-size: larger;
+  font-weight: 900;
+  color: grey;
+  margin-right: 5px;
+}
+
+.todos {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.todo {
+  margin-top: 0.8em;
+  width: 25em; /* Increased width */
+  height: 4em; /* Increased height */
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.todo .left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.todo .left p {
+  margin-left: 3px;
+  font-size: medium;
+  font-weight: 700;
+  font-style: normal;
+  color: grey;
+}
+
+.todo .right {
+  color: grey;
+  cursor: pointer;
+}
+/* Existing styles */
+
+.periodsBox {
+  margin-top: 0.8em;
+  width: 25em; /* Same width as the box */
+  height: 4em; /* Same height as the box */
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.periodsBox label {
+  margin-right: 10px;
+  color: grey;
+}
+
+.periodsBox select {
+  width: 80%;
+  height: 100%;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  padding: 5px;
+  background-color: #f0f0f0;
+}
+/* Addc.js styles */
+
+.app .box {
+  margin-top: 20px;
+  width: 25em;
+  height: 4em;
+  background-color: white;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app label {
+  color: grey;
+}
+
+.app select, .app input[type="file"] {
+  width: 80%;
+  height: 2em;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  padding: 5px;
+  margin-top: 0.8em;
+  background-color: #f0f0f0;
+}
+
+.app .box h2 {
+  color: grey;
+}
+
+.app .box button {
+  margin-top: 20px;
+  width: 25em;
+  height: 4em;
+  background-color: white;
+  border-radius: 6px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.app .box button h2 {
+  color: grey;
 }

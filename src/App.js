@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import Seen from './Seen';
+import Clasess from './Clasess';
+import Take from './Take';
+import Addc from './Addc'; // Import the Addc component
+import './app.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        <div className="mainHeading">
+        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/seen" element={<Seen />} />
+          <Route path="/take" element={<Take />} />
+          <Route path="/clasess" element={<Clasess />} />
+          <Route path="/addc" element={<Addc />} /> {/* Add this route */}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
 export default App;
+
